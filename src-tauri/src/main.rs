@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    ordismade_front_lib::run()
+    ordismaid_front_lib::run()
 }

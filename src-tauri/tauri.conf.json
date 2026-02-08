@@ -1,8 +1,8 @@
 {
   "$schema": "https://schema.tauri.app/config/2",
-  "productName": "ordismade_front",
+  "productName": "ordismaid_front",
   "version": "0.1.0",
-  "identifier": "com.enfellian.ordismade_front",
+  "identifier": "com.enfellian.ordismaid-front",
   "build": {
     "beforeDevCommand": "cross-env BROWSER=none npm run dev",
     "devUrl": "http://localhost:1420",
@@ -12,9 +12,12 @@
   "app": {
     "windows": [
       {
-        "title": "ordismade_front",
+        "title": "OrdisMaid",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "alwaysOnTop": true,
+        "minWidth": 800,
+        "minHeight": 600
       }
     ],
     "security": {
