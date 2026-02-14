@@ -1,0 +1,41 @@
+import { Alert } from "./alert";
+import { News } from "./news";
+
+export interface WorldState {
+  timestamp: string;
+  buildLabel: string;
+  news: News[];
+  events: any[];
+  alerts: Alert[];
+  sortie: Record<string, any>;
+  syndicateMissions: any[];
+  fissures: any;
+  globalUpgrades: any;
+  flashSales: any;
+  invasions: any;
+  darkSectors: any;
+  voidTraders: any;
+  voidTrader: any;
+  dailyDeals: any;
+  simaris: any;
+  conclaveChallenges: any;
+  persistentEnemies: any;
+  earthCycle: any;
+  cetusCycle: any;
+  cambionCycle: any;
+  zarimanCycle: any;
+  constructionProgress: any;
+  vallisCycle: any;
+  nightwave: any;
+  kuva: any;
+  arbitration: any;
+  sentientOutposts: any;
+  steelPath: any;
+  vaultTrader: any;
+  archonHunt: any;
+  duviriCycle: any;
+  kinepage: any;
+  archimedeas: any;
+  calendar: any;
+  faceoffBonus: Record<string, string>;
+}
