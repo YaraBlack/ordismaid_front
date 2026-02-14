@@ -5,7 +5,7 @@ import {
   timerDataAtom,
   timerLoadingAtom,
   timerErrorAtom,
-} from "../store/timerAtom";
+} from "../storage/timerAtom";
 
 export const useTimers = () => {
   const [data, setData] = useAtom(timerDataAtom);
