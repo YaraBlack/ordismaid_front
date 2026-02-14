@@ -5,8 +5,22 @@ import { Baro } from "../pages/Baro";
 import { Timers } from "../pages/Timers";
 import { Settings } from "../pages/Settings";
 import { HomeLayout } from "../layouts/HomeLayout";
+import { useTimers } from "../hooks/useTimers";
+import { useEffect } from "react";
 
 export const Nav = () => {
+  const { fetchData } = useTimers();
+
+  useEffect(() => {
+    // Initial fetch on app start
+    fetchData();
+
+    // Background refresh every 5 minutes
+    const intervalId = setInterval(fetchData, 300000);
+
+    return () => clearInterval(intervalId);
+  }, [fetchData]);
+
   return (
     <Routes>
       <Route element={<HomeLayout />}>
