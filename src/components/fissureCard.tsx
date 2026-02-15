@@ -23,8 +23,8 @@ const FissureItem = ({ item }: { item: Fissure }) => {
         <strong>{item.tier}</strong>: {item.missionType} — {item.enemy}
       </li>
       <li>Node: {item.node}</li>
-      <li style={{ color: "black", fontWeight: "bold" }}>
-        Ends in: {timeLeft}
+      <li>
+        Ends in: <span className={styles.timerExpiry}>{timeLeft}</span>
       </li>
     </ul>
   );
