@@ -18,7 +18,7 @@ export const useTimers = () => {
       setError(null);
       setLoading(true);
 
-      const response = await fetch("http://localhost:3000/api/pc", {
+      const response = await fetch("http://localhost:3000/api/worldState", {
         method: "GET",
         connectTimeout: 5000,
       });
