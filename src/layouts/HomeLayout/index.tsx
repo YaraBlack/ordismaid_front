@@ -7,7 +7,6 @@ export const HomeLayout = () => {
       <div className={styles.navigation}>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/timers">Timers</NavLink>
-        <NavLink to="/baro">Baro</NavLink>
         <NavLink to="/settings">Settings</NavLink>
         <NavLink to="/about">About</NavLink>
       </div>
